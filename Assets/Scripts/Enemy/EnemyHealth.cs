@@ -75,7 +75,7 @@ public class EnemyHealth : MonoBehaviour
         GetComponent <UnityEngine.AI.NavMeshAgent> ().enabled = false; // not turn off the whole game object. just ONE component of a game object
         GetComponent <Rigidbody> ().isKinematic = true; // when you move colider in scene - tries to recalculate the scene - Kinematic rigid body ignores the resyncing
         isSinking = true;
-        //ScoreManager.score += scoreValue;
+        ScoreManager.score += scoreValue;
         Destroy (gameObject, 2f);
     }
 }
